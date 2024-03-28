@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Default_of_Credit_card_Clients</title>
+</head>
+<body>
+  <h2 style="text-align: center;">Default of Credit card Clients</h2>
+  <form action="{{ url_for('home')}}" method="post">
+    ID:
+    <input name="id" type="text"><br>
+    LIMIT_BAL:
+    <input name="limit_bal" type="text"><br>
+    SEX:
+    <select id="myDropdown" name="sex">
+        <option value="1">F</option>
+        <option value="2">M</option>
+    </select><br>
+    
+    EDUCATION:
+    <input name="education" type="text"><br>
+    MARRIAGE:
+    <input  name="marriage" type="text"><br>
+    AGE:
+    <input name="age" type="text"><br>
+    PAY_0:
+    <input name="pay_0" type="text"><br>
+    PAY_2:
+    <input name="pay_2" type="text"><br>
+    PAY_3:
+    <input name="pay_3" type="text"><br>
+    PAY_4:
+    <input name="pay_4" type="text"><br>
+    PAY_5:
+    <input name="pay_5" type="text"><br>
+    PAY_6:
+    <input name="pay_6" type="text"><br>
+    BILL_AMT1:
+    <input name="bill_amt1" type="text"><br>
+    BILL_AMT2:
+    <input name="bill_amt2" type="text"><br>
+    BILL_AMT3:
+    <input name="bill_amt3" type="text"><br>
+    BILL_AMT4:
+    <input name="bill_amt4" type="text"><br>
+    BILL_AMT5:
+    <input name="bill_amt5" type="text"><br>
+    BILL_AMT6:
+    <input name="bill_amt6" type="text"><br>
+    PAY_AMT1:
+    <input name="pay_amt1" type="text"><br>
+    PAY_AMT2:
+    <input name="pay_amt2" type="text"><br>
+    PAY_AMT3:
+    <input name="pay_amt3" type="text"><br>
+    PAY_AMT4:
+    <input name="pay_amt4" type="text"><br>
+    PAY_AMT5:
+    <input name="pay_amt5" type="text"><br>
+    PAY_AMT6:
+    <input name="pay_amt6" type="text"><br>
+
+
+    <input type="submit" value="submit"><br>
+    <h3>
+      default payment next month : {{result}}
+    </h3>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+  
+</style>
+
+</body>
+</html>
